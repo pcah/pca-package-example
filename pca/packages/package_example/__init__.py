@@ -2,4 +2,4 @@
 
 __author__ = """Łukasz Haze"""
 __email__ = "github@lhaze.name"
-__version__ = VERSION = "0.0.1"
+__version__ = VERSION = "0.0.2"

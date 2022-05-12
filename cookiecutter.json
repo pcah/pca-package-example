@@ -11,7 +11,7 @@
     "full_name": "Łukasz Haze",
     "email": "github@lhaze.name",
     "github_username": "lhaze",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "command_line_interface": "Click",
     "open_source_license": "BSD-3-Clause",
     "docstrings_style": "pep257",
