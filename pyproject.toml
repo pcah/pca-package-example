@@ -62,6 +62,8 @@ pytest  = {version = "^7.1.2", optional = true}
 pytest-cov  = {version = "^3.0.0", optional = true}
 toml = {version = "^0.10.2", optional = true}
 tox  = {version = "^3.25.0", optional = true}
+tox-gh-actions  = {version = "^2.6.0", optional = true}
+tox-poetry-installer = {version = "^0.8.4", optional = true}
 twine  = {version = "^4.0.0", optional = true}
 
 [tool.poetry.extras]
@@ -72,8 +74,16 @@ test = [
     "flake8-typing-imports",
     "isort",
     "mypy",
+    "pre-commit",
     "pytest",
-    "pytest-cov"
+    "pytest-cov",
+    "tox",
+    "tox-gh-actions",
+    "tox-poetry-installer",
+]
+
+lint = [
+    "pre-commit",
 ]
 
 dev = [
@@ -169,5 +179,5 @@ match_dir = "pca/packages/package_example/**"
 convention = "pep257"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.1.0a7"]
 build-backend = "poetry.core.masonry.api"
